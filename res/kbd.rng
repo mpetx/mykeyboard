@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="keyboard">
+  <zeroOrMore>
+    <element name="row">
+      <zeroOrMore>
+	<element name="key">
+	  <choice>
+	    <group>
+	      <element name="label">
+		<text/>
+	      </element>
+	      <optional>
+		<element name="lower-letter">
+		  <text/>
+		</element>
+	      </optional>
+	      <optional>
+		<element name="upper-letter">
+		  <text/>
+		</element>
+	      </optional>
+	    </group>
+	    <element name="deleted">
+	      <empty/>
+	    </element>
+	  </choice>
+	</element>
+      </zeroOrMore>
+    </element>
+  </zeroOrMore>
+</element>
