@@ -7,6 +7,10 @@ class MainFrame(wx.Frame):
         super().__init__(None, title="MyKeyboard", size=(840, 420))
         panel = wx.Panel(self)
         top_box = wx.BoxSizer(wx.VERTICAL)
+        # コピーボタンを追加
+        copy_button = wx.Button(panel, label="コピー")
+        copy_button.Bind(wx.EVT_BUTTON, self.on_copy_button_clicked)
+        top_box.Add(copy_button, flag=wx.RIGHT | wx.TOP | wx.ALIGN_RIGHT, border=10)
         # テキストエリアを追加
         text = wx.TextCtrl(panel, style=wx.TE_MULTILINE)
         self.text_ctrl = text
@@ -36,3 +40,13 @@ class MainFrame(wx.Frame):
             self.text_ctrl.WriteText(letter)
             self.text_ctrl.SetFocus()
         return handler
+
+    def on_copy_button_clicked(self, evt):
+        value = self.text_ctrl.GetValue()
+        clipboard = wx.Clipboard()
+        clipboard.SetData(wx.TextDataObject(value))
+        clipboard.Flush()
+        clipboard.Close()
+        from wx.adv import NotificationMessage
+        message = NotificationMessage("MyKeyboard", "テキストをクリップボードに書き込みました。")
+        message.Show()
