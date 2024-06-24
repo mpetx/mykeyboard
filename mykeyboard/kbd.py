@@ -12,6 +12,11 @@ class Key:
 class Keyboard:
 
     def __init__(self, tree):
+        name_elt = tree.getroot().find("./name")
+        if name_elt == None:
+            self.name = None
+        else:
+            self.name = name_elt.text
         self.rows = []
         for row_elt in tree.getroot().findall("./row"):
             keys = []

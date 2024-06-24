@@ -4,7 +4,7 @@ import wx
 class MainFrame(wx.Frame):
 
     def __init__(self, keyboard):
-        super().__init__(None, title="MyKeyboard", size=(840, 540))
+        super().__init__(None, title=self.get_frame_title(keyboard), size=(840, 540))
         panel = wx.Panel(self)
         top_box = wx.BoxSizer(wx.VERTICAL)
         # コピーボタンを追加
@@ -50,3 +50,9 @@ class MainFrame(wx.Frame):
         from wx.adv import NotificationMessage
         message = NotificationMessage("MyKeyboard", "テキストをクリップボードに書き込みました。")
         message.Show()
+
+    def get_frame_title(self, keyboard):
+        if keyboard.name == None:
+            return "MyKeyboard"
+        else:
+            return f"My Keyboard - {keyboard.name}"

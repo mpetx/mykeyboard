@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <keyboard>
 
+  <name>中国語ピンイン</name>
+  
   <row>
     <key><label>Ā</label></key>
     <key><label>Ē</label></key>

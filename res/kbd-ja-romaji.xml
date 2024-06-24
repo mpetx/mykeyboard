@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <keyboard>
 
+  <name>日本語ローマ字</name>
+  
   <row>
     <key><label>Ā</label></key>
     <key><label>Ī</label></key>
