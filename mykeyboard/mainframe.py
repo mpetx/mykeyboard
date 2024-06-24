@@ -4,11 +4,11 @@ import wx
 class MainFrame(wx.Frame):
 
     def __init__(self, keyboard):
-        super().__init__(None, title="MyKeyboard", size=(840, 420))
+        super().__init__(None, title="MyKeyboard", size=(840, 540))
         panel = wx.Panel(self)
         top_box = wx.BoxSizer(wx.VERTICAL)
         # コピーボタンを追加
-        copy_button = wx.Button(panel, label="コピー")
+        copy_button = wx.Button(panel, label="コピー", size=(8 * 12, 28))
         copy_button.Bind(wx.EVT_BUTTON, self.on_copy_button_clicked)
         top_box.Add(copy_button, flag=wx.RIGHT | wx.TOP | wx.ALIGN_RIGHT, border=10)
         # テキストエリアを追加
@@ -25,10 +25,10 @@ class MainFrame(wx.Frame):
                 if key == None:
                     keys.Add(wx.StaticText(panel))
                 else:
-                    button = wx.Button(panel, label=key.label, size=(1,1))
+                    button = wx.Button(panel, label=key.label, size=(1,28))
                     button.Bind(wx.EVT_BUTTON, self.on_key_clicked(key))
                     keys.Add(button, flag=wx.GROW)
-        top_box.Add(keys, flag=wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, proportion=1, border=10)
+        top_box.Add(keys, flag=wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM, proportion=0, border=10)
         panel.SetSizer(top_box)
 
     def on_key_clicked(self, key):
