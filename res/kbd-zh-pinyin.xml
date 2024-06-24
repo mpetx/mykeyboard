@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard>
+
+  <row>
+    <key><label>Ā</label></key>
+    <key><label>Ē</label></key>
+    <key><label>Ī</label></key>
+    <key><label>Ō</label></key>
+    <key><label>Ū</label></key>
+    <key><label>Ǖ</label></key>
+  </row>
+
+  <row>
+    <key><label>Á</label></key>
+    <key><label>É</label></key>
+    <key><label>Í</label></key>
+    <key><label>Ó</label></key>
+    <key><label>Ú</label></key>
+    <key><label>Ǘ</label></key>
+  </row>
+
+  <row>
+    <key><label>Ǎ</label></key>
+    <key><label>Ě</label></key>
+    <key><label>Ǐ</label></key>
+    <key><label>Ǒ</label></key>
+    <key><label>Ǔ</label></key>
+    <key><label>Ǚ</label></key>
+  </row>
+
+  <row>
+    <key><label>À</label></key>
+    <key><label>È</label></key>
+    <key><label>Ì</label></key>
+    <key><label>Ò</label></key>
+    <key><label>Ù</label></key>
+    <key><label>Ǜ</label></key>
+  </row>
+
+  <row>
+    <key><deleted/></key>
+    <key><deleted/></key>
+    <key><deleted/></key>
+    <key><deleted/></key>
+    <key><deleted/></key>
+    <key><label>Ü</label></key>
+  </row>
+
+</keyboard>
