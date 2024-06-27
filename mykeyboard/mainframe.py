@@ -21,7 +21,10 @@ class MainFrame(wx.Frame):
         keys = wx.GridSizer(keyboard.column_count)
         for row in range(0, keyboard.row_count):
             for column in range(0, keyboard.column_count):
-                key = keyboard.rows[row][column]
+                if column >= len(keyboard.rows[row]):
+                    key = None
+                else:
+                    key = keyboard.rows[row][column]
                 if key == None:
                     keys.Add(wx.StaticText(panel))
                 else:
