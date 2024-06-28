@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard>
+
+  <name>ヒンディー語ISO-15919</name>
+  
+  <row>
+    <key><label>Ā</label></key>
+    <key><label>Ī</label></key>
+    <key><label>Ū</label></key>
+    <key><label>R̥</label></key>
+    <key><label>R̥̄</label></key>
+    <key><label>L̥</label></key>
+    <key><label>L̥̄</label></key>
+    <key><label>Ē</label></key>
+    <key><label>Ê</label></key>
+    <key><label>Ō</label></key>
+    <key><label>Ô</label></key>
+  </row>
+
+  <row>
+    <key><label>Ṭ</label></key>
+    <key><label>Ḍ</label></key>
+    <key><label>Ṛ</label></key>
+    <key><label>Ṅ</label></key>
+    <key><label>Ñ</label></key>
+    <key><label>Ṇ</label></key>
+    <key><label>Ś</label></key>
+    <key><label>Ṣ</label></key>
+    <key>
+      <label>K͟h</label>
+      <lower-letter>k͟h</lower-letter>
+      <upper-letter>K͟h</upper-letter>
+    </key>
+    <key><label>Ġ</label></key>
+  </row>
+  
+  <row>
+    <key><label>Ṁ</label></key>
+    <key><label>M̐</label></key>
+    <key><label>Ḥ</label></key>
+  </row>
+
+</keyboard>
